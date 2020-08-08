@@ -1,0 +1,43 @@
+.social-networks-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__icon {
+        margin-right: 10px;
+        width: 25px;
+        height: 25px;
+
+        cursor: pointer;
+    
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+        &[data-linkedin] {
+            background-image: url('../../assets/images/linkedin.png');
+        }
+
+        &[data-facebook] {
+            background-image: url('../../assets/images/facebook.png');
+        }
+
+        &[data-instagram] {
+            background-image: url('../../assets/images/instagram.png');
+        }
+
+        &[data-medium] {
+            background-image: url('../../assets/images/medium.png');
+        }
+
+        &[data-twitter] {
+            background-image: url('../../assets/images/twitter.png');
+        }
+
+        &[data-github] {
+            background-image: url('../../assets/images/github.png');
+        }
+    }
+    
+}
+

@@ -1,0 +1,65 @@
+@import '../../colors.scss';
+@import '../../mixins.scss';
+@import '../../animations.scss';
+
+.info {
+    &__header {
+        @include section($black);
+        background-image: linear-gradient(to right bottom,
+        rgba($black, .5),
+        rgba($black, .5)),
+        url('../../assets/images/town.jpg');
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat-x;
+        height: 100vh;
+    }
+
+    &__avatar {
+       width: 100px;
+       height: 100px;
+       border-radius: 50%;
+       background-image: url('../../assets/images/avatar.jpg');
+       background-size: cover;
+       background-position: center;
+       background-repeat: no-repeat;
+
+    //    animation: fadeIn 1.5s, slideBottom 1.5s;
+    }
+
+    &__avatar-container {
+        position: relative;
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    &__avatar-details {
+        margin-top: 15px;
+        font-size: 25px;
+        color: $white;
+        font-family: 'Inconsolata', monospace;
+    }
+
+    &__first-name, &__last-name {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__social-links {
+        margin-top: 20px;
+    }
+    
+    &__type {
+        animation: blink 1.3s linear 0s infinite alternate;
+        margin-top: 40px;
+    }
+
+    &__nav {
+        margin-top: 40px;
+    }
+}

@@ -1,0 +1,25 @@
+@import "../../colors.scss";
+@import "../../mixins.scss";
+
+.type-panel {
+  display: flex;
+  min-height: 22px;
+  cursor: pointer;
+  &__text {
+    font-size: 22px;
+    color: $white;
+    font-family: "Inconsolata", monospace;
+    align-self: start;
+  }
+  &__cursor {
+    background-color: $white;
+    width: 8px;
+    height: 4px;
+    margin-left: 1px;
+    align-self: flex-end;
+    visibility: visible;
+    
+    animation: blink 1.4s steps(5, start) infinite;
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
+  }
+}
