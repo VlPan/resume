@@ -1,14 +1,12 @@
-<header class="info__header">
+<header class="info__header" @container>
   <figure class="info__avatar-container">
     <div class="info__avatar" @moveDown></div>
     <figcaption class="info__avatar-details">
       <div class="info__first-name" @moveRight>Uladzimir</div>
       <div class="info__last-name" @moveLeft >Pantsiukhou</div>
     </figcaption>
-    <app-social-networks-panel class="info__social-links"></app-social-networks-panel>
-    <app-type-panel text="Click me..." class="info__type" [delay]="1000" (click)="toggleNavigation()" @pulse></app-type-panel>
+    <app-social-networks-panel class="info__social-links" *ngIf="true"></app-social-networks-panel>
+    <app-type-panel text="Click me..." class="info__type" [delay]="1000" (click)="toggleNavigation()"></app-type-panel>
     <app-nav class="info__nav" [isActive]="isNavShown"></app-nav>
-    
-    
   </figure>
 </header>

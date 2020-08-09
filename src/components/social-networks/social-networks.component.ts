@@ -25,6 +25,14 @@ import { Component, OnInit } from '@angular/core';
           ]),
         ]),
       ]),
+      transition(':leave', [
+        query('.social-networks-panel__icon', [
+          style({ opacity: 1, transform: 'translateX(0)' }),
+          stagger('200ms', [
+            animate('150ms ease-in', style({ opacity: 0, transform: 'translateX(500px)' })),
+          ]),
+        ]),
+      ]),
     ]),
   ],
 })

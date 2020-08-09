@@ -1,3 +1,5 @@
+import { SkillsComponent } from './../views/skills/skills.component';
+import { ExperienceComponent } from './../views/experience/experience.component';
 import { NavComponent } from './../components/nav/nav.component';
 import { TypePanelComponent } from './../components/type-panel/type-panel.component';
 import { SocialNetworksComponent } from './../components/social-networks/social-networks.component';
@@ -16,7 +18,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     InfoComponent,
     SocialNetworksComponent,
     TypePanelComponent,
-    NavComponent
+    NavComponent,
+    ExperienceComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

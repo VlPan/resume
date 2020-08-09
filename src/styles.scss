@@ -1,3 +1,6 @@
+@import './mixins.scss';
+@import './colors.scss';
+
 /* You can add global styles to this file, and also import other style files */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -41,4 +44,9 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+body {
+	@include section($black);
+	font-style: consolas;
+	overflow-x: hidden;
 }

@@ -1,11 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { trigger, style, animate, transition } from '@angular/animations';
+import { trigger, style, animate, transition, query, animateChild } from '@angular/animations';
 
 @Component({
   selector: 'app-info',
   templateUrl: './info.component.html',
   styleUrls: ['./info.component.scss'],
   animations: [
+    trigger('container', [
+      transition(':enter, :leave', [
+        query('@*', animateChild(), { optional: true }),
+      ]),
+    ]),
     trigger('moveDown', [
       transition(':enter', [
         style({ opacity: 0, transform: 'translateY(-100px)' }),

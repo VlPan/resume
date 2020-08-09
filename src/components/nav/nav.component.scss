@@ -20,6 +20,10 @@
         border: 2px solid $blue;
         padding: 20px 40px;
         position: relative;
+
+        &:focus {
+            outline: none;
+        }
         
         &:nth-child(1) {
             margin-top: 15px;

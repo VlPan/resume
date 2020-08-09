@@ -1,0 +1,6 @@
+@import '../../colors.scss';
+@import '../../mixins.scss';
+@import '../../animations.scss';
+.skills {
+    @include section($black);
+}

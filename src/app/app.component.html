@@ -1,1 +1,12 @@
-<app-info></app-info>
+<!-- <div [@routeAnimations]="prepareRoute(outlet) || 'default'">
+    <router-outlet #outlet="outlet"></router-outlet>
+</div> -->
+
+<!-- <router-outlet></router-outlet> -->
+
+<!-- <app-info></app-info> -->
+
+
+<div [@routeAnimations]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
