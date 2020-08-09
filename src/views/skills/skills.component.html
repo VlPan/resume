@@ -1,1 +1,15 @@
-<section class="skills"></section>
+<section class="skills">
+    <div class="skills__center-container">
+        <app-card text="MY SKILLS..." [delay]="1000">
+            <div class="skills__container">
+                <div class="skills__year-skills" *ngFor="let year of experienceSkillMapKeys">
+                    <div class="skills__year-label">{{year}} year{{year > 1 ? 's' : ''}}</div>
+                    <div class="skills__content">
+                        <app-label *ngFor="let skill of experienceSkillMap[year]" [text]="skill.text" [color]="skill.color"></app-label>
+                    </div>
+                </div>
+
+            </div>
+        </app-card>
+    </div>
+</section>

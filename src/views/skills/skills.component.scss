@@ -2,5 +2,47 @@
 @import '../../mixins.scss';
 @import '../../animations.scss';
 .skills {
-    @include section($black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__center-container {
+        min-height: 400px;
+        min-width: 300px;
+        width: 50%;
+    }
+
+    &__year-skills {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    &__year-label {
+        padding: 5px;
+        background-color: darken($blue, 8%);
+        color: $white;
+        font-family: 'Inconsolata', monospace;
+        width: fit-content;
+        margin-bottom: 15px;
+    }
+
+  
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        & > * {
+            margin-bottom: 10px;
+            margin-right: 15px;
+        }
+    }
 }

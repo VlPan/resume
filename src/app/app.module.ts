@@ -1,8 +1,10 @@
+import { LabelComponent } from './../components/label/label.component';
 import { SkillsComponent } from './../views/skills/skills.component';
 import { ExperienceComponent } from './../views/experience/experience.component';
 import { NavComponent } from './../components/nav/nav.component';
 import { TypePanelComponent } from './../components/type-panel/type-panel.component';
 import { SocialNetworksComponent } from './../components/social-networks/social-networks.component';
+import { CardComponent } from './../components/card/card.component';
 import { InfoComponent } from './../views/info/info.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -20,7 +22,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     TypePanelComponent,
     NavComponent,
     ExperienceComponent,
-    SkillsComponent
+    SkillsComponent,
+    CardComponent,
+    LabelComponent
   ],
   imports: [
     BrowserModule,

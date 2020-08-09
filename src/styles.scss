@@ -47,6 +47,6 @@ table {
 }
 body {
 	@include section($black);
-	font-style: consolas;
 	overflow-x: hidden;
+	font-family: 'Inconsolata', monospace;
 }
