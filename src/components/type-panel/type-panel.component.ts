@@ -23,7 +23,6 @@ export class TypePanelComponent implements OnInit, OnDestroy {
         timer(100 * index)
           .pipe(take(1))
           .subscribe(() => {
-            console.log(c);
             this.animatedText += c;
           });
       })

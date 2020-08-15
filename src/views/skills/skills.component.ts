@@ -52,7 +52,6 @@ export class SkillsComponent implements OnInit {
         (years, index, self) => self.indexOf(years) === index
       )
 
-    console.log('uniqueYearsOfExp', uniqueYearsOfExp);
 
     this.experienceSkillMap = uniqueYearsOfExp.reduce((acc, cur) => ({
       ...acc,

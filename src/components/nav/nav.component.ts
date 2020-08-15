@@ -1,5 +1,7 @@
 import { transition, trigger, style, animate, query, animateChild } from '@angular/animations';
 import { Component, OnInit, Input } from '@angular/core';
+import { Observable, Observer } from 'rxjs';
+import { share } from 'rxjs/operators';
 
 @Component({
   selector: 'app-nav',
@@ -47,7 +49,20 @@ export class NavComponent implements OnInit {
 
   @Input() isActive = false;
 
-  constructor() { }
+  constructor() {
+    let interval =  (time) => {
+      let i = 0;
+      let o = new Observable((v: Observer<number>) => {
+        setInterval(() => {
+          i += time;
+          v.next(i);
+        }, time);
+      });
+      return o;
+    };
+
+    const hot$ = interval(1000).pipe(share());
+ }
 
   ngOnInit() {
   }
